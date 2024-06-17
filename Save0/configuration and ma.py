@@ -74,6 +74,6 @@ def main():
     initialize_0()
     # do_patterns()
     # spin_companion_mode()
-    spin_pumpkin_loop()
+    spin_pumpkin_loop(get_world_size()-1, get_world_size()-1)
     
 main()
