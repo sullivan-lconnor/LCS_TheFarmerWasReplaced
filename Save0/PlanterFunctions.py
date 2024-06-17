@@ -16,8 +16,6 @@ def do_tree():
     plant(Entities.Tree)
     
 def do_pumpkin():
-    if can_harvest():
-        harvest()
     trade(Items.Pumpkin_Seed)
     plant(Entities.Pumpkin)
     

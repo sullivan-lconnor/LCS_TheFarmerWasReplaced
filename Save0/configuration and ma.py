@@ -73,6 +73,7 @@ def main():
     initialize_grid_info()
     initialize_0()
     # do_patterns()
-    spin_companion_mode()
+    # spin_companion_mode()
+    spin_pumpkin_loop()
     
 main()
