@@ -72,8 +72,11 @@ def yis(y):
 def main():
     initialize_grid_info()
     initialize_0()
+    while(1):
+        smart_companion_mode()
+        smart_pumpkin_loop()
     # do_patterns()
     # spin_companion_mode()
-    spin_pumpkin_loop(get_world_size()-1, get_world_size()-1)
+    # spin_pumpkin_loop(get_world_size()-1, get_world_size()-1)
     
 main()

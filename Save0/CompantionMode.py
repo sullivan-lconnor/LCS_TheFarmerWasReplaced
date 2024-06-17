@@ -19,3 +19,11 @@ def spin_companion_mode():
     plantByType(1) # plant a grass
     while(1):
         companion_loop()
+
+def smart_companion_mode():
+    condition = num_items(Items.Carrot) < 10000
+    if (num_items(Items.Carrot) < 10000):
+        plantByType(1) # plant a grass
+        while(num_items(Items.Carrot) < 10000):
+            companion_loop()
+            

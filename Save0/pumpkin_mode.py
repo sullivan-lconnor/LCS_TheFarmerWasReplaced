@@ -61,4 +61,11 @@ def spin_pumpkin_loop(x_dim, y_dim):
         recursive_pumpkin(visted_pumpkins)
         harvest()
 
-spin_pumpkin_loop(get_world_size(), get_world_size())
+
+def smart_pumpkin_loop():
+    while(num_items(Items.Pumpkin_Seed) > get_world_size()**2):
+        move_to(list ( (0, 0) ))
+        visted_pumpkins = plant_a_pumpkin_and_return_where(get_world_size(),get_world_size())
+        recursive_pumpkin(visted_pumpkins)
+        harvest()
+    trade(Items.Pumpkin_Seed,get_world_size()**2)    
